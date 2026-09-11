@@ -66,4 +66,13 @@ void main() {
     System.out.println("Liczba znaków tego słowa wynosi: "+liczba_znak);
 
 
+    //zadanie 8
+
+    int x=5;
+    int y=2;
+
+    double wynik=(double)x/y;
+    System.out.println(wynik);
+
+
 }
