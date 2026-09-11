@@ -83,4 +83,14 @@ void main() {
 
     System.out.println(duze_litery);
 
+
+    //zadanie 10
+
+    System.out.println("Program liczy POLE KOŁA. WPROWADŹ PROMIEŃ R!");
+    int promien=sc.nextInt();
+    double pole=3.14*promien*promien;
+
+    System.out.println("Pole koła jest równe: "+pole);
+
+
 }
