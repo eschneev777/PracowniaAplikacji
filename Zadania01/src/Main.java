@@ -14,4 +14,17 @@ void main() {
 
     System.out.println("Mam na imię "+imie+ " ,mam "+(2026-rok_urodzenia) + " lat i będę pisać maturę za "+liczba_przechow+ " roku.");
 
+
+    System.out.println("Podaj jaką masz temperaturę na polu");
+
+    Scanner sc = new Scanner(System.in);
+
+    double stopnie = sc.nextDouble();
+
+    double fahrenheit = 1.8*stopnie+32;
+
+    System.out.println("Temperatura w stopniach Fahrenheita: "+fahrenheit);
+
+
+
 }
