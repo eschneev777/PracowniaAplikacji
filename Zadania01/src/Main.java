@@ -55,6 +55,15 @@ void main() {
     System.out.println(trzecie_slowo+", "+drugie_slowo+", "+pierwsze_slowo);
 
 
-    
+    //zadanie 7
+
+    System.out.println("Program wczytuje wyraz i wypisuje z ilu znaków się składa.");
+
+    String slowo=sc.nextLine();
+
+    int liczba_znak=slowo.length();
+
+    System.out.println("Liczba znaków tego słowa wynosi: "+liczba_znak);
+
 
 }
