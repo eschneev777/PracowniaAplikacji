@@ -75,4 +75,12 @@ void main() {
     System.out.println(wynik);
 
 
+    //zadanie 9
+
+    System.out.println("Program zamienia wprowadzone słowo małymi literami na duże litery. Wprowadź słowo.");
+    String male_litery=sc.nextLine();
+    String duze_litery=male_litery.toUpperCase();
+
+    System.out.println(duze_litery);
+
 }
