@@ -283,5 +283,15 @@ void main() {
     System.out.println("Użytkownik jest pełnoletni. - " + pelnoletnosc);
 
 
+    //ZADANIE 8
+
+    System.out.println("Program sprawdza, czy rok jest przestępny, wprowadź rok.");
+    int rok=sc.nextInt();
+     if ((rok%4==0 && rok%100!=0) || (rok%400==0)) {
+         System.out.println("Wprowadzony rok jest przestępny");
+     } else {
+         System.out.println("Wprowadzony rok NIE jest przestępny");
+     }
+
 
 }
