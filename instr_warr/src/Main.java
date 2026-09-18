@@ -275,5 +275,13 @@ void main() {
 
 
 
+    //ZADANIE 7
+
+    System.out.println("Program sprawdza pełnoletność. Wprowadź swój wiek");
+    int wiek=sc.nextInt();
+    boolean pelnoletnosc = (wiek>=18) ? true : false;
+    System.out.println("Użytkownik jest pełnoletni. - " + pelnoletnosc);
+
+
 
 }
