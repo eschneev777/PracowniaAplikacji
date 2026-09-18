@@ -169,4 +169,23 @@ void main() {
 
             }
 
-        }}
+        }
+
+
+//ZADANIE 3
+
+    System.out.println("Program wypisuje wiekszą liczbę spośród dwóch. Wprowadź pierwszą liczbę: ");
+    int liczbaa1 = sc.nextInt();
+    System.out.println("Wprowadź drugą liczbę:");
+    int liczbaa2= sc.nextInt();
+
+    if(liczbaa1>liczbaa2) {
+        System.out.println(liczbaa1 + " jest większa");
+    } else if(liczbaa2>liczbaa1) {
+        System.out.println(liczbaa2 + " jest większa");
+    } else {
+        System.out.println("Liczby są równe");
+    }
+
+
+}
