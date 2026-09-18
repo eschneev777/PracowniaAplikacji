@@ -147,4 +147,26 @@ void main() {
     }
 
 
-}
+    //ZADANIE 2
+
+    System.out.println("Program sprawdza czy można zbudować trójkąt o podanych wymiarach. Wprowadź pierwszą długość boku: ");
+    int bok1=sc.nextInt();
+    System.out.println("Wprowadź długość drugiego boku:");
+    int bok2=sc.nextInt();
+    System.out.println("Wprowadź długość trzeciego boku: ");
+    int bok3=sc.nextInt();
+
+    if (bok1+bok2>bok3) {
+        if(bok1+bok3>bok2) {
+            if (bok2 + bok3 > bok1) {
+
+            }
+                System.out.println("Da się zbudować trójkąt o podanych wymiarach");
+
+
+            } else {
+                System.out.println("nie bendzie trujkonta");
+
+            }
+
+        }}
