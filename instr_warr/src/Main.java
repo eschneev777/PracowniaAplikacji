@@ -136,9 +136,9 @@ void main() {
     System.out.println("Wprowadź liczbę, a program sprawdzi czy jest podzielna przez 3");
 
     Scanner sc = new Scanner(System.in);
-    int liczba3=sc.nextInt();
+    int liczba3 = sc.nextInt();
 
-    if(liczba3%3 == 0) {
+    if (liczba3 % 3 == 0) {
 
         System.out.println("Liczba jest podzielna przez 3");
 
@@ -150,26 +150,26 @@ void main() {
     //ZADANIE 2
 
     System.out.println("Program sprawdza czy można zbudować trójkąt o podanych wymiarach. Wprowadź pierwszą długość boku: ");
-    int bok1=sc.nextInt();
+    int bok1 = sc.nextInt();
     System.out.println("Wprowadź długość drugiego boku:");
-    int bok2=sc.nextInt();
+    int bok2 = sc.nextInt();
     System.out.println("Wprowadź długość trzeciego boku: ");
-    int bok3=sc.nextInt();
+    int bok3 = sc.nextInt();
 
-    if (bok1+bok2>bok3) {
-        if(bok1+bok3>bok2) {
+    if (bok1 + bok2 > bok3) {
+        if (bok1 + bok3 > bok2) {
             if (bok2 + bok3 > bok1) {
 
             }
-                System.out.println("Da się zbudować trójkąt o podanych wymiarach");
+            System.out.println("Da się zbudować trójkąt o podanych wymiarach");
 
 
-            } else {
-                System.out.println("nie bendzie trujkonta");
-
-            }
+        } else {
+            System.out.println("nie bendzie trujkonta");
 
         }
+
+    }
 
 
 //ZADANIE 3
@@ -177,44 +177,42 @@ void main() {
     System.out.println("Program wypisuje wiekszą liczbę spośród dwóch. Wprowadź pierwszą liczbę: ");
     int liczbaa1 = sc.nextInt();
     System.out.println("Wprowadź drugą liczbę:");
-    int liczbaa2= sc.nextInt();
+    int liczbaa2 = sc.nextInt();
 
-    if(liczbaa1>liczbaa2) {
+    if (liczbaa1 > liczbaa2) {
         System.out.println(liczbaa1 + " jest większa");
-    } else if(liczbaa2>liczbaa1) {
+    } else if (liczbaa2 > liczbaa1) {
         System.out.println(liczbaa2 + " jest większa");
     } else {
         System.out.println("Liczby są równe");
     }
 
 
-
     //ZADANIE 4
 
     System.out.println("Program wypisuje największą liczbę spośród trzech. Wprowadź pierwszą liczbę:");
-    int number1=sc.nextInt();
+    int number1 = sc.nextInt();
     System.out.println("Wprowadź drugą liczbę:");
-    int number2=sc.nextInt();
+    int number2 = sc.nextInt();
     System.out.println("Wprowadź trzecią liczbę");
-    int number3=sc.nextInt();
+    int number3 = sc.nextInt();
 
-    if(number1>number2 && number1>number3) {
+    if (number1 > number2 && number1 > number3) {
         System.out.println(number1 + "jest największe");
-    } else if(number2>number1 && number2>number3){
+    } else if (number2 > number1 && number2 > number3) {
         System.out.println(number2 + " jest największa");
-    } else if(number3>number1 && number3>number2) {
+    } else if (number3 > number1 && number3 > number2) {
         System.out.println(number3 + " jest największa");
     } else {
         System.out.println("Wszystkie liczby są sobie równe");
     }
 
 
-
     //ZADANIE 5
 
 
     System.out.println("Wprowadź numer miesiąca (np. październik - 10");
-    int miesiac=sc.nextInt();
+    int miesiac = sc.nextInt();
     switch (miesiac) {
         case 1:
             System.out.println("styczeń");
@@ -258,14 +256,13 @@ void main() {
     }
 
 
-
     //ZADANIE 6
 
     System.out.println("Program sprawdza czy twoje imię jest takie samo jak autora programu. Wprowadź swoje imię bez polskich znaków");
-    String imie=sc.nextLine();
+    String imie = sc.nextLine();
     System.out.println("test"); //wprowadziłam dwa razy zmienną imię, ponieważ nie wyświetlało tego imię
-    String imie2=sc.nextLine();
-    String mojeImie="Sandra";
+    String imie2 = sc.nextLine();
+    String mojeImie = "Sandra";
 
     if (imie2.equals(mojeImie)) {
         System.out.println("Gratulacje użytkowniku! Masz takie samo imię jak twórca programu.");
@@ -274,42 +271,58 @@ void main() {
     }
 
 
-
     //ZADANIE 7
 
     System.out.println("Program sprawdza pełnoletność. Wprowadź swój wiek");
-    int wiek=sc.nextInt();
-    boolean pelnoletnosc = (wiek>=18) ? true : false;
+    int wiek = sc.nextInt();
+    boolean pelnoletnosc = (wiek >= 18) ? true : false;
     System.out.println("Użytkownik jest pełnoletni. - " + pelnoletnosc);
 
 
     //ZADANIE 8
 
     System.out.println("Program sprawdza, czy rok jest przestępny, wprowadź rok.");
-    int rok=sc.nextInt();
-     if ((rok%4==0 && rok%100!=0) || (rok%400==0)) {
-         System.out.println("Wprowadzony rok jest przestępny");
-     } else {
-         System.out.println("Wprowadzony rok NIE jest przestępny");
-     }
+    int rok = sc.nextInt();
+    if ((rok % 4 == 0 && rok % 100 != 0) || (rok % 400 == 0)) {
+        System.out.println("Wprowadzony rok jest przestępny");
+    } else {
+        System.out.println("Wprowadzony rok NIE jest przestępny");
+    }
 
 
-     //ZADANIE 9
+    //ZADANIE 9
 
     System.out.println("Program oblicza BMI. Wprowadź wzrost w metrach");
-     double wzrost=sc.nextDouble();
+    double wzrost = sc.nextDouble();
     System.out.println("Wprowadź wagę w kilogramach");
-    double waga=sc.nextDouble();
+    double waga = sc.nextDouble();
 
-    double bmi=waga/(wzrost*wzrost);
-    System.out.println("BMI wynosi: "+bmi);
+    double bmi = waga / (wzrost * wzrost);
+    System.out.println("BMI wynosi: " + bmi);
 
-    if(bmi<18.5) {
+    if (bmi < 18.5) {
         System.out.println("niedowaga");
-    } else if(bmi>24.9) {
+    } else if (bmi > 24.9) {
         System.out.println("nadwaga");
     } else {
         System.out.println("waga prawidłowa");
     }
+
+
+//ZADANIE 10
+
+
+//ZADANIE 11 KALKULATOR
+
+    System.out.println("Witamy w kalkulatorze, możesz tu dodać, odjąć, mnożyć, dzielić dwie liczby");
+    System.out.println("Wprowadź pierwszą liczbę");
+    int a= sc.nextInt();
+    System.out.println("Wprowadź jakie działanie chcesz wykonać (wpisz słowo: suma/roznica/iloczyn/iloraz");
+    String symbol= sc.nextLine();
+    System.out.println("Wprowadź drugą liczbę");
+    int b=sc.nextInt();
+
+    
+
 
 }
