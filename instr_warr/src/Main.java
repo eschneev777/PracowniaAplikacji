@@ -130,8 +130,21 @@ void main() {
 //
 //
 //
+    //ZADANIE 1
 
-    
+
+    System.out.println("Wprowadź liczbę, a program sprawdzi czy jest podzielna przez 3");
+
+    Scanner sc = new Scanner(System.in);
+    int liczba3=sc.nextInt();
+
+    if(liczba3%3 == 0) {
+
+        System.out.println("Liczba jest podzielna przez 3");
+
+    } else {
+        System.out.println("Liczba nie jest podzielna przez 3");
+    }
 
 
 }
