@@ -294,4 +294,22 @@ void main() {
      }
 
 
+     //ZADANIE 9
+
+    System.out.println("Program oblicza BMI. Wprowadź wzrost w metrach");
+     double wzrost=sc.nextDouble();
+    System.out.println("Wprowadź wagę w kilogramach");
+    double waga=sc.nextDouble();
+
+    double bmi=waga/(wzrost*wzrost);
+    System.out.println("BMI wynosi: "+bmi);
+
+    if(bmi<18.5) {
+        System.out.println("niedowaga");
+    } else if(bmi>24.9) {
+        System.out.println("nadwaga");
+    } else {
+        System.out.println("waga prawidłowa");
+    }
+
 }
