@@ -257,4 +257,23 @@ void main() {
 
     }
 
+
+
+    //ZADANIE 6
+
+    System.out.println("Program sprawdza czy twoje imię jest takie samo jak autora programu. Wprowadź swoje imię bez polskich znaków");
+    String imie=sc.nextLine();
+    System.out.println("test"); //wprowadziłam dwa razy zmienną imię, ponieważ nie wyświetlało tego imię
+    String imie2=sc.nextLine();
+    String mojeImie="Sandra";
+
+    if (imie2.equals(mojeImie)) {
+        System.out.println("Gratulacje użytkowniku! Masz takie samo imię jak twórca programu.");
+    } else {
+        System.out.println("Twoje imię nie jest takie samo");
+    }
+
+
+
+
 }
