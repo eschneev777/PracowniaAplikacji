@@ -209,4 +209,52 @@ void main() {
     }
 
 
+
+    //ZADANIE 5
+
+
+    System.out.println("Wprowadź numer miesiąca (np. październik - 10");
+    int miesiac=sc.nextInt();
+    switch (miesiac) {
+        case 1:
+            System.out.println("styczeń");
+            break;
+        case 2:
+            System.out.println("luty");
+            break;
+        case 3:
+            System.out.println("marzec");
+            break;
+        case 4:
+            System.out.println("kwiecień");
+            break;
+        case 5:
+            System.out.println("maj");
+            break;
+        case 6:
+            System.out.println("czerwiec");
+            break;
+        case 7:
+            System.out.println("lipiec");
+            break;
+        case 8:
+            System.out.println("sierpień");
+            break;
+        case 9:
+            System.out.println("wrzesień");
+            break;
+        case 10:
+            System.out.println("październik");
+            break;
+        case 11:
+            System.out.println("listopad");
+            break;
+        case 12:
+            System.out.println("grudzień");
+            break;
+        default:
+            System.out.println("Nieprawidłowy numer miesiąca");
+
+    }
+
 }
