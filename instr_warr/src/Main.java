@@ -188,4 +188,25 @@ void main() {
     }
 
 
+
+    //ZADANIE 4
+
+    System.out.println("Program wypisuje największą liczbę spośród trzech. Wprowadź pierwszą liczbę:");
+    int number1=sc.nextInt();
+    System.out.println("Wprowadź drugą liczbę:");
+    int number2=sc.nextInt();
+    System.out.println("Wprowadź trzecią liczbę");
+    int number3=sc.nextInt();
+
+    if(number1>number2 && number1>number3) {
+        System.out.println(number1 + "jest największe");
+    } else if(number2>number1 && number2>number3){
+        System.out.println(number2 + " jest największa");
+    } else if(number3>number1 && number3>number2) {
+        System.out.println(number3 + " jest największa");
+    } else {
+        System.out.println("Wszystkie liczby są sobie równe");
+    }
+
+
 }
