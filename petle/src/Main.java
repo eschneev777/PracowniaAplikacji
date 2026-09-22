@@ -61,5 +61,15 @@ int liczba;
 
 
     //ZADANIE4
+
+    System.out.println("Progran pobiera ciąg liczb całkowitych. Zakończenie pobierania ciągu liczb, kończy wpisanie zera. Na końcu program wyświetla sumę największej i najmniejszej liczby z ciągu oraz ich średnią arytmetyczną.");
+
+    int liczby;
     
+
+    do{
+        liczby=sc.nextInt();
+
+    }while(liczby!=0);
+
 }
