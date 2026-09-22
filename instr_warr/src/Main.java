@@ -322,7 +322,7 @@ void main() {
     System.out.println("Wprowadź drugą liczbę");
     int b=sc.nextInt();
 
-    
+
 
 
 }
