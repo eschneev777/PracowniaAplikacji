@@ -5,17 +5,17 @@ void main() {
 //
 //  int licznik=20;
 //
-////    while(licznik<10) {
-////        System.out.println("Licznik: " +licznik);
-////        licznik++;
-////    }
+//    while(licznik<10) {
+//        System.out.println("Licznik: " +licznik);
+//        licznik++;
+//    }
+
+//    do {
+//        System.out.println("Licznik: "+licznik);
+//        licznik++;
 //
-////    do {
-////        System.out.println("Licznik: "+licznik);
-////        licznik++;
-////
-////
-////    }while(licznik<10);
+//
+//    }while(licznik<10);
 //
 //    for(int i=0; i<5; i++) {
 //        System.out.println("Zewnętrzna pętla");
@@ -28,5 +28,38 @@ void main() {
 
     //ZADANIE 1
 
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Wprowadź liczbę całkowitą dodatnią, a program wyświetli wszystkie liczby nieparzyste od podanej liczby");
+
+    int calkowita=sc.nextInt();
+    for(int i=1;i<=calkowita; i+=2){
+        System.out.println(i + " ");
+    }
+
+    //ZADANIE 2
+
+    System.out.println("Wprowadź liczbę całkowitą dodatnią, a program wypisze wszytskiee potęgi liczby 2 do wskazanej, podanej tu liczby");
+
+    int n=sc.nextInt();
+    for(int i=1; i<=n; i*=2) {
+        System.out.println(i+" ");
+    }
+
+
+    //ZADANIE 3
+
+    System.out.println("Program wczytuje liczby dopóki nie zostanie podane 0. Wyświetla sumę wprowadzonych liczb.");
+int suma=0;
+int liczba;
+
+    do{
+         liczba= sc.nextInt();
+        suma+=liczba;
+
+    }while (liczba!=0);
+    System.out.println(suma);
+
+
+    //ZADANIE4
     
- }
+}
