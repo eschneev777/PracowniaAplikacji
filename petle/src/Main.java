@@ -64,12 +64,39 @@ int liczba;
 
     System.out.println("Progran pobiera ciąg liczb całkowitych. Zakończenie pobierania ciągu liczb, kończy wpisanie zera. Na końcu program wyświetla sumę największej i najmniejszej liczby z ciągu oraz ich średnią arytmetyczną.");
 
-    int liczby;
-    
+    int liczby=sc.nextInt();
 
-    do{
+    int min=liczby;
+    int max=liczby;
+
+    while(true) {
         liczby=sc.nextInt();
 
-    }while(liczby!=0);
+        if (liczby==0) {
+            break;
+        }
+
+        if (liczby<min){
+            min=liczby;
+
+        }
+
+        if (liczby>max) {
+            max=liczby;
+        }
+    }
+
+    int suma2=max+min;
+    double srednia=suma/2;
+
+    System.out.println("Największa liczba: "+max);
+    System.out.println("Najmniejsza liczba: "+min);
+    System.out.println("Suma największej i najmniejszej: "+suma2);
+    System.out.println("Średnia największej i najmniejszej: "+srednia);
+
+
+//ZADANIE 5
+
+
 
 }
