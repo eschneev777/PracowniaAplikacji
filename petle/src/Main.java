@@ -35,8 +35,8 @@ void main() {
     for (int i = 1; i <= calkowita; i += 2) {
         System.out.println(i + " ");
     }
-
-    //ZADANIE 2
+//
+//    //ZADANIE 2
 
     System.out.println("Wprowadź liczbę całkowitą dodatnią, a program wypisze wszytskiee potęgi liczby 2 do wskazanej, podanej tu liczby");
 
@@ -46,7 +46,7 @@ void main() {
     }
 
 
-    //ZADANIE 3
+//    //ZADANIE 3
 
     System.out.println("Program wczytuje liczby dopóki nie zostanie podane 0. Wyświetla sumę wprowadzonych liczb.");
     int suma = 0;
@@ -60,7 +60,7 @@ void main() {
     System.out.println(suma);
 
 
-    //ZADANIE4
+//    //ZADANIE4
 
     System.out.println("Progran pobiera ciąg liczb całkowitych. Zakończenie pobierania ciągu liczb, kończy wpisanie zera. Na końcu program wyświetla sumę największej i najmniejszej liczby z ciągu oraz ich średnią arytmetyczną.");
 
@@ -121,7 +121,7 @@ void main() {
 
     }
 
-//ZADANIE 6 - nie wiem
+////ZADANIE 6 - nie wiem
 
     System.out.println("Program tworzy prostokąt ze znaków.");
 
@@ -163,7 +163,7 @@ void main() {
 
 
 //ZADANIE 7 nie wiem
-
+//
 //ZADANIE 8
 
     System.out.println("Program liczy silnie. Wprowadź liczbę z której ma zostać policzona.");
@@ -174,6 +174,22 @@ void main() {
         silnia*=i;
     }
     System.out.println("Silnia z " +wpr+ " wynosi "+silnia);
+
+//ZADANIE 9
+
+    System.out.println("Program sprawdza, czy podane przez użytkownika słowo jest palindromem. Na przykład 'kamilślimak' ");
+    String slowo1= sc.nextLine();
+    String slowo=sc.nextLine();
+
+    String slowoP=slowo.toLowerCase();
+
+    String slowoOdwrocone=new StringBuilder(slowoP).reverse().toString();
+
+    if(slowoP.equals(slowoOdwrocone)) {
+        System.out.println("słowo jest palindromem");
+    } else {
+        System.out.println("słowo NIE jest palindromem");
+    }
 
 
 
