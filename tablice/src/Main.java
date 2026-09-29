@@ -24,7 +24,19 @@ void main() {
 
     //ZADANIE 1
 
-    
+
+    int[] tablica_parz={1, 2, 3, 4, 5, 6, 7, 8};
+    String[] tablica_nieparz={"wiśnia", "czereśnia", "arbuz"};
+
+    System.out.println("Co drugi element z parzystej: ");
+    for(int i=0; i<tablica_parz.length; i+=2) {
+        System.out.println(tablica_parz[i]);
+    }
+    System.out.println("Co drugi element z tablicy nieparzystej");
+    for(int i=0; i<tablica_nieparz.length; i+=2) {
+        System.out.println(tablica_nieparz[i]);
+    }
+
 
 
 
