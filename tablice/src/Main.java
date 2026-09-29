@@ -54,7 +54,18 @@ void main() {
 
         System.out.println("Największa liczba z tablicy to: " + max);
 
-    }
+
 
 
 //ZADANIE 3
+
+
+String[] wisnia={"czereśnia", "kzesło", "kondensator", "logarytm", "sinus", "cosinus"};
+for(String czeresnia : wisnia){
+
+    System.out.println(czeresnia.toUpperCase());
+        }
+        }
+
+//ZADANIE 4
+
