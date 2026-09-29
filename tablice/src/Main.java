@@ -39,5 +39,22 @@ void main() {
 
 
 
+    //ZADANIE 2
 
-}
+    int[] liczby={98, 230, 777, 71, 34, 82, 83, 90, 55, 248, 49, 47, 448, 0, 11, 115, 601, 588};
+
+    int max=liczby[0];
+
+    for(int i=1; i<liczby.length; i++) {
+        if (liczby[i] > max) {
+                max=liczby[i];
+            }
+
+        }
+
+        System.out.println("Największa liczba z tablicy to: " + max);
+
+    }
+
+
+//ZADANIE 3
