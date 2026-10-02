@@ -125,6 +125,18 @@ int[] liczby8=new int[8];
 
     //ZADANIE 7
 
-    
+String[] miasta={"Luksemburg, San Marino, Monako"};
+String[] panstwa={"Luksemburg, San Marino, Monako"};
+
+boolean czyTakieSame=Arrays.equals(miasta, panstwa);
+
+if(czyTakieSame) {
+    System.out.println("Tablice są takie same");
+} else {
+    System.out.println("Tablice NIE są takie same");
+}
+
+
+
 
 }
