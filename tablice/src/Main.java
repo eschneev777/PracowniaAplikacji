@@ -65,7 +65,66 @@ for(String czeresnia : wisnia){
 
     System.out.println(czeresnia.toUpperCase());
         }
-        }
+
 
 //ZADANIE 4
 
+
+Scanner sc=new Scanner(System.in);
+//String slowa=new String[5];
+
+    System.out.println("Wprowadź 5 słów");
+    for(int i=0; i<5; i++) {
+        System.out.println(i+1);
+       // slowa[i]=sc.nextLine();
+
+    }
+
+
+
+//ZADANIE 5
+
+int[] liczby8=new int[8];
+
+    System.out.println("Podaj 8 liczb całkowitych");
+
+    for(int i=0; i<8; i++) {
+        liczby8[i]=sc.nextInt();
+    }
+
+   Arrays.sort(liczby8);
+
+    System.out.println("Liczby posortowane rosnąco: ");
+    System.out.println(Arrays.toString(liczby8));
+
+
+ //ZADANIE 8
+
+        int[] liczby5=new int[5];
+    System.out.println("Podaj 5 liczb całkowitych, a program obliczy z nich silnię");
+    for (int i=0; i<5; i++) {
+        liczby5[i]=sc.nextInt();
+    }
+
+    System.out.println("Silnia z każdej liczby: ");
+
+    for(int i=0; i<5; i++) {
+        int n=liczby5[i];
+        int silnia=1;
+
+        if(n<0) {
+            System.out.println("Silnia nie istnieje z liczb ujemnych");
+        } else {
+            for(int j=1; j<=n; j++) {
+                silnia*=j;
+            }
+        }
+        System.out.println(n+"! = " +silnia);
+    }
+
+
+    //ZADANIE 7
+
+    
+
+}
