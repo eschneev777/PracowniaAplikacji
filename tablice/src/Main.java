@@ -191,7 +191,22 @@ void main() {
 
     //ZADANIE 9
 
-    
+int[] dwadziescia=new int[20];
+    Random random2 = new Random();
 
+    System.out.println("Wylosowane liczby: ");
+    for(int i=0; i< dwadziescia.length; i++) {
+        dwadziescia[i]=random2.nextInt(10)+1;
+        System.out.println(dwadziescia[i] +" ");
+    }
 
+for( int i=1; i<=10; i++) {
+    int powtarzac=0;
+    for (int j=0; j< dwadziescia.length; j++) {
+        if(dwadziescia[j]==i) {
+            powtarzac++;
+        }
+    }
+    System.out.println("Liczba "+ i + " powtarza się: "+powtarzac+" razy");
+}
 }
