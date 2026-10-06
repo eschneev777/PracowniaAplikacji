@@ -4,6 +4,11 @@ void main() {
 
     int wiek= wiek();
     System.out.println("Mój wiek to: "+wiek);
+
+    String imie=imie();
+    System.out.println("Moje imię to: "+imie );
+
+    System.out.println(dzialania(7, 2));
 //
 //metoda();
 //int zmienna=zwrot();
@@ -19,6 +24,18 @@ public int wiek() {
     return 18;
 }
 
+public String imie() {
+    return "Sandra";
+}
+
+public String dzialania( int a, int b) {
+
+    int suma=a+b;
+    int roznica=a-b;
+    int iloczyn=a*b;
+    return "Suma: " + suma + ", Różnica: " + roznica + ", Iloczyn: " + iloczyn;
+
+}
 //public void metoda() {  //void nic nie zwraca
 //    System.out.println("metoda");
 //}
