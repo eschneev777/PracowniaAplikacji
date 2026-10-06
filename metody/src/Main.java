@@ -11,6 +11,10 @@ void main() {
     System.out.println(dzialania(7, 2));
 
     System.out.println("Parzysta? "+parzysta(434));
+
+    System.out.println("Czy liczba 777 podzielna przez 3 i 5? - "+ podzielnosc35(777));
+
+    System.out.println("Liczba 7 do potęgi 3 = "+potega3(7));
 //
 //metoda();
 //int zmienna=zwrot();
@@ -41,6 +45,16 @@ public String dzialania( int a, int b) {
 
 public boolean parzysta(int liczba) {
     return liczba%2==0;
+}
+
+
+public boolean podzielnosc35(int podzielnosc) {
+    return podzielnosc%15==0;
+}
+
+
+public int potega3(int potega) {
+    return potega*potega*potega;
 }
 //public void metoda() {  //void nic nie zwraca
 //    System.out.println("metoda");
