@@ -9,6 +9,8 @@ void main() {
     System.out.println("Moje imię to: "+imie );
 
     System.out.println(dzialania(7, 2));
+
+    System.out.println("Parzysta? "+parzysta(434));
 //
 //metoda();
 //int zmienna=zwrot();
@@ -35,6 +37,10 @@ public String dzialania( int a, int b) {
     int iloczyn=a*b;
     return "Suma: " + suma + ", Różnica: " + roznica + ", Iloczyn: " + iloczyn;
 
+}
+
+public boolean parzysta(int liczba) {
+    return liczba%2==0;
 }
 //public void metoda() {  //void nic nie zwraca
 //    System.out.println("metoda");
