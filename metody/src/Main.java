@@ -15,6 +15,8 @@ void main() {
     System.out.println("Czy liczba 777 podzielna przez 3 i 5? - "+ podzielnosc35(777));
 
     System.out.println("Liczba 7 do potęgi 3 = "+potega3(7));
+
+    System.out.println("Pierwiastek kwadratowy z liczby 4489: "+ pierwiastek(4489));
 //
 //metoda();
 //int zmienna=zwrot();
@@ -55,6 +57,10 @@ public boolean podzielnosc35(int podzielnosc) {
 
 public int potega3(int potega) {
     return potega*potega*potega;
+}
+
+public double pierwiastek(int pierwiastek) {
+        return Math.sqrt(pierwiastek);
 }
 //public void metoda() {  //void nic nie zwraca
 //    System.out.println("metoda");
