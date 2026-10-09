@@ -17,7 +17,9 @@ void main() {
     System.out.println("Liczba 7 do potęgi 3 = "+potega3(7));
 
     System.out.println("Pierwiastek kwadratowy z liczby 4489: "+ pierwiastek(4489));
-//
+
+    System.out.println(czyTrojkatProstokatny(3, 4, 5));
+    //
 //metoda();
 //int zmienna=zwrot();
 //    System.out.println("Zwrócona wartość: "+zmienna);
@@ -61,6 +63,22 @@ public int potega3(int potega) {
 
 public double pierwiastek(int pierwiastek) {
         return Math.sqrt(pierwiastek);
+}
+
+public static boolean czyTrojkatProstokatny(double a, double b, double c) {
+    if (a <= 0 || b <= 0 || c <= 0) {
+        return false;
+    }
+
+    double najdluzszy = Math.max(a, Math.max(b, c));
+
+    if (najdluzszy == a) {
+        return a * a == b * b + c * c;
+    } else if (najdluzszy == b) {
+        return b * b == a * a + c * c;
+    } else {
+        return c * c == a * a + b * b;
+    }
 }
 //public void metoda() {  //void nic nie zwraca
 //    System.out.println("metoda");
