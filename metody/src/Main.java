@@ -27,6 +27,12 @@ void main() {
     int[] liczby0 = {9, 34, 67, 101};
 
     System.out.println(sumaTablicy(liczby0));
+
+    int liczbaLiterA = zliczWystapienia("Dzisiaj obliczaliśmy logarytmy, a jutro liczymy cosinusy ", 'o');
+
+    System.out.println(liczbaLiterA); // 3
+
+
     //
 //metoda();
 //int zmienna=zwrot();
@@ -121,6 +127,19 @@ public static int sumaTablicy(int[] liczby0) {
 
     return suma;
 }
+
+public static int zliczWystapienia(String tekst, char znak) {
+    int licznik = 0;
+
+    for (int i = 0; i < tekst.length(); i++) {
+        if (tekst.charAt(i) == znak) {
+            licznik++;
+        }
+    }
+
+    return licznik;
+}
+
 //public void metoda() {  //void nic nie zwraca
 //    System.out.println("metoda");
 //}
