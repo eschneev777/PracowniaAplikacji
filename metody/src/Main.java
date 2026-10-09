@@ -21,6 +21,8 @@ void main() {
     System.out.println(czyTrojkatProstokatny(3, 4, 5));
 
     System.out.println(ostatniZnak("Wiśnia"));
+
+    System.out.println(czyPalindrom("kamilślimak"));
     //
 //metoda();
 //int zmienna=zwrot();
@@ -85,6 +87,24 @@ public static boolean czyTrojkatProstokatny(double a, double b, double c) {
 
 public static char ostatniZnak(String tekst) {
     return tekst.charAt(tekst.length() - 1);
+}
+
+public static boolean czyPalindrom(String tekst) {
+    tekst = tekst.toLowerCase();
+
+    int lewy = 0;
+    int prawy = tekst.length() - 1;
+
+    while (lewy < prawy) {
+        if (tekst.charAt(lewy) != tekst.charAt(prawy)) {
+            return false;
+        }
+
+        lewy++;
+        prawy--;
+    }
+
+    return true;
 }
 //public void metoda() {  //void nic nie zwraca
 //    System.out.println("metoda");
