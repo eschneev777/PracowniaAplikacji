@@ -23,6 +23,10 @@ void main() {
     System.out.println(ostatniZnak("Wiśnia"));
 
     System.out.println(czyPalindrom("kamilślimak"));
+
+    int[] liczby0 = {9, 34, 67, 101};
+
+    System.out.println(sumaTablicy(liczby0));
     //
 //metoda();
 //int zmienna=zwrot();
@@ -105,6 +109,17 @@ public static boolean czyPalindrom(String tekst) {
     }
 
     return true;
+}
+
+
+public static int sumaTablicy(int[] liczby0) {
+    int suma = 0;
+
+    for (int liczba : liczby0) {
+        suma += liczba;
+    }
+
+    return suma;
 }
 //public void metoda() {  //void nic nie zwraca
 //    System.out.println("metoda");
