@@ -19,6 +19,8 @@ void main() {
     System.out.println("Pierwiastek kwadratowy z liczby 4489: "+ pierwiastek(4489));
 
     System.out.println(czyTrojkatProstokatny(3, 4, 5));
+
+    System.out.println(ostatniZnak("Wiśnia"));
     //
 //metoda();
 //int zmienna=zwrot();
@@ -79,6 +81,10 @@ public static boolean czyTrojkatProstokatny(double a, double b, double c) {
     } else {
         return c * c == a * a + b * b;
     }
+}
+
+public static char ostatniZnak(String tekst) {
+    return tekst.charAt(tekst.length() - 1);
 }
 //public void metoda() {  //void nic nie zwraca
 //    System.out.println("metoda");
