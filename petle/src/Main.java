@@ -97,10 +97,10 @@ void main() {
 
 //ZADANIE 5
 
-    System.out.println("Program losuje liczbę z zakresu 1 do 100, a użytkownik ma za zadanie odgadnąć jaka to liczba.");
+    System.out.println("Program losuje liczbę z zakresu 1 do 1000, a użytkownik ma za zadanie odgadnąć jaka to liczba.");
 
     Random random = new Random();
-    int wylosowana = random.nextInt(100) + 1;
+    int wylosowana = random.nextInt(1000) + 1;
     int wpisana = 0;
 
     while (wpisana != wylosowana) {

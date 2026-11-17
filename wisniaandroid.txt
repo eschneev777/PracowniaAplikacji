@@ -1,0 +1,20 @@
+   <Button
+        android:id="@+id/button"
+        android:layout_width="167dp"
+        android:layout_height="132dp"
+        android:focusedSearchResultHighlightColor="#430000"
+        android:text="wiśnia"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="69dp"
+        tools:text="dzień dobry" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="568dp"
+        android:layout_height="885dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/toyotayaris" />
