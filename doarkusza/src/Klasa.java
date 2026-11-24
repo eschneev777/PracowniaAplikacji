@@ -11,7 +11,7 @@ public class Klasa {
     }
 
     public Klasa() {
-        
+
     }
 
 
